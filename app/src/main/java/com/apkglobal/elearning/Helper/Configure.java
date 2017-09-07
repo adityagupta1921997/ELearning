@@ -1,8 +1,5 @@
 package com.apkglobal.elearning.Helper;
 
-/**
- * Created by Mayank on 9/1/2017.
- */
 
 public class Configure {
     public static String apikey="AIzaSyDvrOEtY2k0d5L5HPQ_Vq6Elr0e-j4Y_0Q\n";

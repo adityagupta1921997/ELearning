@@ -1,8 +1,5 @@
 package com.apkglobal.elearning.TopicUtil;
 
-/**
- * Created by ashu on 31/8/17.
- */
 
 class TechnicalModel {
 

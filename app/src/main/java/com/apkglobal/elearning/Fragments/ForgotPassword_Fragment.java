@@ -1,8 +1,6 @@
 package com.apkglobal.elearning.Fragments;
 
-/**
- * Created by Mayank on 8/30/2017.
- */
+
 
 import android.widget.Toast;
 

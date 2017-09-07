@@ -1,9 +1,5 @@
 package com.apkglobal.elearning.Helper;
 
-/**
- * Created by Mayank on 8/30/2017.
- */
-
 public class Utils {
 
     //Email Validation pattern

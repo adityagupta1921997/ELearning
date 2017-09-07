@@ -11,9 +11,6 @@ import android.widget.Toast;
 
 import com.apkglobal.elearning.R;
 
-/**
- * Created by H.P on 11-Jun-17.
- */
 
 public class ImageSliderAdapter extends PagerAdapter {
 

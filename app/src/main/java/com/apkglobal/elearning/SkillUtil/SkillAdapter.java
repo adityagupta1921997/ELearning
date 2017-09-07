@@ -11,10 +11,6 @@ import com.apkglobal.elearning.R;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by ashu on 31/8/17.
- */
-
 public class SkillAdapter extends RecyclerView.Adapter<SkillHolder> {
 
     private List<SkillModel> skillModelList;

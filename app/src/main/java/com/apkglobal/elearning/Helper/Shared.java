@@ -6,9 +6,6 @@ import android.content.SharedPreferences;
 
 import com.apkglobal.elearning.Activity.MainActivity;
 
-/**
- * Created by Mayank on 9/3/2017.
- */
 
 public class Shared {
     Context context;

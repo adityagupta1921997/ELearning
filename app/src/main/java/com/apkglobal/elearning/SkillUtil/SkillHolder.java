@@ -10,6 +10,7 @@ import android.widget.TextView;
 /*import com.apkglobal.elearning.Activity.HumanSkills;
 import com.apkglobal.elearning.Activity.ManagerialSkills;
 import com.apkglobal.elearning.Activity.TechnicalSkills;*/
+import com.apkglobal.elearning.Activity.HumanSkills;
 import com.apkglobal.elearning.Activity.ManagerialSkills;
 import com.apkglobal.elearning.Activity.TechnicalSkills;
 import com.apkglobal.elearning.R;
@@ -40,6 +41,9 @@ class SkillHolder extends RecyclerView.ViewHolder {
 
             context.startActivity(new Intent(context, ManagerialSkills.class));
 
+        }
+        else if(getAdapterPosition()==2){
+            context.startActivity(new Intent(context, HumanSkills.class));
         }
     }
 });

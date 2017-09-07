@@ -1,8 +1,5 @@
 package com.apkglobal.elearning.SkillUtil;
 
-/**
- * Created by ashu on 31/8/17.
- */
 
 class SkillModel {
 

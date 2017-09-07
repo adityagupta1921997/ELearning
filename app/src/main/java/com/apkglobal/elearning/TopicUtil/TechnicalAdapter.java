@@ -11,9 +11,6 @@ import com.apkglobal.elearning.R;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by ashu on 31/8/17.
- */
 
 public class TechnicalAdapter extends RecyclerView.Adapter<TechnicalHolder> {
 

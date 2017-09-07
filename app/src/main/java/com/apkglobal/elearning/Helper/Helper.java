@@ -3,9 +3,6 @@ package com.apkglobal.elearning.Helper;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-/**
- * Created by Mayank on 9/3/2017.
- */
 
 public class Helper {
     Context context;
