@@ -170,7 +170,7 @@ public class Navigation extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         int id = item.getItemId();
 
-        /*if (id == R.id.nav_home) {
+        if (id == R.id.nav_home) {
         } else if (id == R.id.about) {
             Intent about=new Intent(Navigation.this,AboutActivity.class);
             startActivity(about);
@@ -188,7 +188,6 @@ public class Navigation extends AppCompatActivity
             startActivity(Intent.createChooser(share,"Share App Via"));
 
         }
-*/
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;

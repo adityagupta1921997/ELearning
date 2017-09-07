@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.apkglobal.elearning.Activity.QueryActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="@dimen/layout_more_margin">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/queryassist_icon"
+            android:id="@+id/iv_query"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/background_color"
+            android:hint="Add your Query..."
+            android:textColorHint="@color/background_color"
+            android:id="@+id/et_query"
+            android:textColor="@color/background_color"
+            android:fontFamily="cursive"
+            android:lines="5"
+            android:gravity="center"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_top_margin"
+            android:backgroundTint="@color/background_color"
+            android:textColor="#fff"
+            android:text="Submit"
+            android:textStyle="bold"
+            android:id="@+id/btn_submit"
+            android:fontFamily="cursive"/>
+    </LinearLayout>
+
+</LinearLayout>

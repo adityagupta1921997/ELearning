@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.apkglobal.elearning.Activity.AboutActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="@dimen/layout_more_margin">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_about"
+            android:src="@drawable/about"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/about_data"
+            android:gravity="center"
+            android:fontFamily="cursive"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/background_color"
+            android:id="@+id/tv_about"/>
+    </LinearLayout>
+
+</LinearLayout>
