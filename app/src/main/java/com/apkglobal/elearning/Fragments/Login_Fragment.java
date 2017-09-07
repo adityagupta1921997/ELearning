@@ -22,6 +22,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 //import com.apkglobal.elearning.Activity.Navigation;
+import com.apkglobal.elearning.Activity.Navigation;
 import com.apkglobal.elearning.Helper.CustomToast;
 import com.apkglobal.elearning.Helper.Shared;
 import com.apkglobal.elearning.R;
@@ -173,8 +174,8 @@ public class Login_Fragment extends Fragment implements OnClickListener {
         // Check if email id is valid or not
         else if (getEmailId.matches(emailPattern)) {
             //Toast.makeText(getActivity(), "Do Login", Toast.LENGTH_SHORT).show();
-            /*Intent intent=new Intent(getActivity(),Navigation.class);
-            startActivity(intent);*/
+            Intent intent=new Intent(getActivity(),Navigation.class);
+            startActivity(intent);
             shared.withlogin();
         }
             // Else do login and do your stuff

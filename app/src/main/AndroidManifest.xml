@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.apkglobal.elearning">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,6 +19,30 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Activity.Navigation"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--<activity
+            android:name=".Activity.TechnicalSkills"
+            android:label="@string/title_activity_technical"
+            android:theme="@style/AppTheme.NoActionBar" />-->
+        <!--<activity android:name=".Activity.ManagerialSkills"
+            android:label="@string/title_activity_managerial"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Activity.HumanSkills"
+            android:label="@string/title_activity_human"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>-->
+        <activity android:name=".Helper.CustomToast" />
+        <activity android:name=".Activity.MainActivity" />
+        <!--<activity android:name=".Activity.YoutubeActivity" />
+        <activity android:name=".Activity.AboutActivity" />
+        <activity android:name=".Activity.QueryActivity" />
+        <activity android:name=".Activity.Quiz" />-->
+
+
+
     </application>
 
 </manifest>
