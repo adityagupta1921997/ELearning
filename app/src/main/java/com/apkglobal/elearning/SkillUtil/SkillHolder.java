@@ -10,6 +10,7 @@ import android.widget.TextView;
 /*import com.apkglobal.elearning.Activity.HumanSkills;
 import com.apkglobal.elearning.Activity.ManagerialSkills;
 import com.apkglobal.elearning.Activity.TechnicalSkills;*/
+import com.apkglobal.elearning.Activity.TechnicalSkills;
 import com.apkglobal.elearning.R;
 
 class SkillHolder extends RecyclerView.ViewHolder {
@@ -27,6 +28,12 @@ class SkillHolder extends RecyclerView.ViewHolder {
         itemView.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View view) {
+        if (getAdapterPosition()==0)
+        {
+
+            context.startActivity(new Intent(context, TechnicalSkills.class));
+
+        }
     }
 });
 

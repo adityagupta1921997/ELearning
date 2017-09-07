@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        app:cardElevation="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:elevation="3dp"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:background="@drawable/card_view_border"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/name_of_topic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name of topic"
+                android:textColor="#054680"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <LinearLayout
+                android:padding="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout">
+                <ImageView
+
+                    android:src="@drawable/quiz"
+                    android:layout_width="25sp"
+                    android:layout_height="25sp" />
+                <Button
+                    android:id="@+id/button_quiz_section"
+                    android:textColor="#000"
+                    android:background="?selectableItemBackground"
+                    android:textStyle="bold"
+                    android:text="Take Quiz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
