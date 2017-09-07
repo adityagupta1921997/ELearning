@@ -25,7 +25,8 @@ import com.apkglobal.elearning.Adapters.ImageSliderAdapter;
 import com.apkglobal.elearning.Helper.Helper;
 import com.apkglobal.elearning.Helper.Shared;
 import com.apkglobal.elearning.R;
-//import com.apkglobal.elearning.SkillUtil.SkillAdapter;
+import com.apkglobal.elearning.SkillUtil.SkillAdapter;
+import com.apkglobal.elearning.SkillUtil.SkillAdapter;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -73,8 +74,8 @@ public class Navigation extends AppCompatActivity
 
         recyclerView=(RecyclerView)findViewById(R.id.recyclerView_categories);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        //SkillAdapter skillAdapter=new SkillAdapter();
-        //recyclerView.setAdapter(skillAdapter);
+        SkillAdapter skillAdapter=new SkillAdapter();
+        recyclerView.setAdapter(skillAdapter);
 
         sliderDotspanel=(LinearLayout)findViewById(R.id.imageSliderDots);
         imageSliderViewPager=(ViewPager)findViewById(R.id.imageSlider);
