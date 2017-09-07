@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/layout_more_margin">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        </android.support.v7.widget.RecyclerView>
+
+       <!-- <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:background="@color/background_color" />-->
+
+        <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_more_margin"
+            android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+            android:text="Test your learning"
+            android:fontFamily="cursive"
+            android:textSize="20sp"
+            android:textColor="@color/background_color"
+            android:id="@+id/tv_test"/>-->
+    </LinearLayout>
+
+</LinearLayout>

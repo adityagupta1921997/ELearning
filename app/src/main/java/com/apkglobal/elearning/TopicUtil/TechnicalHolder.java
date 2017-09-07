@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.apkglobal.elearning.Activity.YoutubeActivity;
 import com.apkglobal.elearning.Helper.Configure;
 import com.apkglobal.elearning.R;
 
@@ -33,6 +35,31 @@ class TechnicalHolder extends RecyclerView.ViewHolder {
 
         topicName = (TextView) itemView.findViewById(R.id.name_of_topic);
         quiz_button = (Button) itemView.findViewById(R.id.button_quiz_section);
+        itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(connectionStatus()==true) {
+                    if (getAdapterPosition() == 0) {
+                        configure.setVideokey(videoid1);
+                    } else if (getAdapterPosition() == 1) {
+                        configure.setVideokey(videoid2);
+
+                    } else if (getAdapterPosition() == 2) {
+                        configure.setVideokey(videoid3);
+
+                    } else {
+                        configure.setVideokey(videoid4);
+
+                    }
+                    Intent intent = new Intent(context, YoutubeActivity.class);
+                    context.startActivity(intent);
+                }
+                else {
+                    Toast.makeText(context, "Check your Internet Connection", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+        });
     }
 
     public void bindData(TechnicalModel skillModel)

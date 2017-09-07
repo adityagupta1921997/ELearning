@@ -37,8 +37,8 @@
         </activity>-->
         <activity android:name=".Helper.CustomToast" />
         <activity android:name=".Activity.MainActivity" />
-        <!--<activity android:name=".Activity.YoutubeActivity" />
-        <activity android:name=".Activity.AboutActivity" />
+        <activity android:name=".Activity.YoutubeActivity" />
+        <!--<activity android:name=".Activity.AboutActivity" />
         <activity android:name=".Activity.QueryActivity" />
         <activity android:name=".Activity.Quiz" />-->
 
