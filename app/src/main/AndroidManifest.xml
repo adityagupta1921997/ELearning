@@ -28,7 +28,7 @@
             android:name=".Activity.TechnicalSkills"
             android:label="@string/title_activity_technical"
             android:theme="@style/AppTheme.NoActionBar" />
-        <!--<activity android:name=".Activity.ManagerialSkills"
+        <activity android:name=".Activity.ManagerialSkills"
             android:label="@string/title_activity_managerial"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".Activity.HumanSkills"
