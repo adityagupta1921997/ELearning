@@ -18,7 +18,7 @@ public class SplashActivity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         //to hide the action bar
         getSupportActionBar().hide();
-        int time = 4000;
+        int time = 3000;
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             @Override

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
@@ -13,6 +14,7 @@ import android.widget.Toast;
 
 import com.apkglobal.elearning.Helper.Configure;
 import com.apkglobal.elearning.R;
+import com.daimajia.easing.Skill;
 import com.wang.avi.AVLoadingIndicatorView;
 import com.yarolegovich.lovelydialog.LovelyStandardDialog;
 
@@ -99,7 +101,13 @@ public class Quiz extends AppCompatActivity {
 
                                 }
                             })
-                            .setNegativeButton(android.R.string.no, null)
+                            .setNegativeButton(android.R.string.no, new View.OnClickListener() {
+                                @Override
+                                public void onClick(View view) {
+
+
+                                }
+                            })
                             .show();
 
                 }
@@ -185,5 +193,7 @@ public class Quiz extends AppCompatActivity {
             ((RadioButton) radioGroup.getChildAt(3)).setText(option4);
 
         }
+
     }
+
 }

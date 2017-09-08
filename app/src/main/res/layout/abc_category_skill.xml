@@ -13,6 +13,7 @@
         app:cardCornerRadius="5dp">
 
         <RelativeLayout
+            android:background="@drawable/card_view_border"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="10dp">

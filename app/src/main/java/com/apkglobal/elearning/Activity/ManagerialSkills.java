@@ -29,7 +29,6 @@ public class ManagerialSkills extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Toast.makeText(getApplicationContext(),"Playing the ManagerialSkills Video",Toast.LENGTH_SHORT).show();
                 new LovelyStandardDialog(ManagerialSkills.this)
                         .setTopColorRes(R.color.background_color)
                         .setButtonsColorRes(R.color.background_color)
@@ -39,8 +38,6 @@ public class ManagerialSkills extends AppCompatActivity {
                         .show();
             }
         });
-
-//        quizButton=(Button)findViewById(R.id.button_quiz_section);
 
         View.OnClickListener butListner=new View.OnClickListener() {
             @Override
