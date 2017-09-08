@@ -89,6 +89,13 @@ public class Quiz extends AppCompatActivity {
                             .setPositiveButton("Submit", new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
+                                    String string_score= String.valueOf(score);
+                                    String string_maximum_question= String.valueOf(maximum_question);
+
+                                    Intent intent = new Intent (Quiz.this, Result.class);
+                                    intent.putExtra("score", string_score);
+                                    intent.putExtra("maximumQuestion", string_maximum_question);
+                                    startActivity(intent);
 
                                 }
                             })

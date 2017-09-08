@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.apkglobal.elearning.R;
 import com.apkglobal.elearning.TopicUtil.TechnicalAdapter;
+import com.yarolegovich.lovelydialog.LovelyStandardDialog;
 
 public class TechnicalSkills extends AppCompatActivity {
 
@@ -29,7 +30,14 @@ public class TechnicalSkills extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(),"Playing the TechnicalSkills Video",Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getApplicationContext(),"Playing the TechnicalSkills Video",Toast.LENGTH_SHORT).show();
+                new LovelyStandardDialog(TechnicalSkills.this)
+                        .setTopColorRes(R.color.background_color)
+                        .setButtonsColorRes(R.color.background_color)
+                        .setIcon(R.drawable.start_icon)
+                        .setTitle("Get Set Go!!")
+                        .setNegativeButton("OK", null)
+                        .show();
             }
         });
 

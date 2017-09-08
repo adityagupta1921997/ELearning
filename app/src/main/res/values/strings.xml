@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ELearning</string>
+    <string name="app_name">SkillBooster</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="email">Email Id</string>
@@ -25,7 +25,7 @@
     <string name="title_activity_technical">Technical Skills</string>
     <string name="title_activity_managerial">Managerial Skills</string>
     <string name="title_activity_human">Human Skills</string>
-    <string name="about_data">E-Learn!! As the name suggests is the learning app for the employees to enhance their tecnical,managerial and soft skills in a very fun and enthuthiastic manner by building concepts with amazing videos and practice quizzes to track their progress plus we welcome your queries and feedbacks!!
+    <string name="about_data">Skill Booster!! As the name suggests is the skill boosting app for the employees to enhance their tecnical,managerial and soft skills in a very fun and enthuthiastic manner by building concepts with amazing videos and practice quizzes to track their progress plus we welcome your queries and feedbacks!!
     So come,try and experience the change and become eligible to crack the interviews!</string>
 
 </resources>

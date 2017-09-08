@@ -6,15 +6,30 @@
     android:layout_height="match_parent"
     android:background="#fff"
     tools:context="com.apkglobal.elearning.Activity.SplashActivity">
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="@dimen/layout_more_margin">
+        android:orientation="vertical">
         <ImageView
+            android:scaleType="fitXY"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/learning_concept_23_2147507702"/>
-    </LinearLayout>
+            android:src="@drawable/app_icon"/>
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skill Booster"
+            android:textSize="30dp"
+            android:fontFamily="cursive"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:id="@+id/tv_skill"
+
+            />
+    </RelativeLayout>
+
 
 
 

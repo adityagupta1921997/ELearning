@@ -13,18 +13,20 @@
     android:theme="@style/ThemeOverlay.AppCompat.Dark"
     android:weightSum="1">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="71dp"
-        android:layout_height="77dp"
-        android:paddingTop="@dimen/nav_header_vertical_spacing"
-        app:srcCompat="@drawable/nav_icon" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/image_of_skill"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/app_icon"
+        app:civ_border_color="#ffffff"
+        app:civ_border_width="4dp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="10dp"
-        android:text="ELearning"
+        android:text="Skill Booster"
         android:fontFamily="cursive"
         android:textSize="20sp"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />

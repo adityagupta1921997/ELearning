@@ -13,6 +13,7 @@ import android.widget.Toast;
 import com.apkglobal.elearning.R;
 import com.apkglobal.elearning.TopicUtil.HumanAdapter;
 import com.apkglobal.elearning.TopicUtil.ManagerialAdapter;
+import com.yarolegovich.lovelydialog.LovelyStandardDialog;
 
 public class HumanSkills extends AppCompatActivity {
     private RecyclerView recyclerView;
@@ -28,7 +29,14 @@ public class HumanSkills extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(),"Playing the HumanSkills Video",Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getApplicationContext(),"Playing the HumanSkills Video",Toast.LENGTH_SHORT).show();
+                new LovelyStandardDialog(HumanSkills.this)
+                        .setTopColorRes(R.color.background_color)
+                        .setButtonsColorRes(R.color.background_color)
+                        .setIcon(R.drawable.start_icon)
+                        .setTitle("Get Set Go!!")
+                        .setNegativeButton("OK", null)
+                        .show();
             }
         });
 
