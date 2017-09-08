@@ -40,7 +40,7 @@
         <activity android:name=".Activity.YoutubeActivity" />
         <activity android:name=".Activity.AboutActivity" />
         <activity android:name=".Activity.QueryActivity" />
-        <!--<activity android:name=".Activity.Quiz" />-->
+        <activity android:name=".Activity.Quiz" />
 
 
 

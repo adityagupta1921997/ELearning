@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.apkglobal.elearning.Activity.Quiz;
 import com.apkglobal.elearning.Activity.YoutubeActivity;
 import com.apkglobal.elearning.Helper.Configure;
 import com.apkglobal.elearning.R;
@@ -33,6 +34,26 @@ class ManagerialHolder extends RecyclerView.ViewHolder {
 
         topicName=(TextView) itemView.findViewById(R.id.name_of_topic);
         quiz_button=(Button) itemView.findViewById(R.id.button_quiz_section);
+        quiz_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (connectionStatus() == true) {
+
+                    if (getAdapterPosition() == 0) {
+                        configure2.setFetch_url(murl1);
+                    } else if (getAdapterPosition() == 1) {
+                        configure2.setFetch_url(murl2);
+                    } else {
+                        configure2.setFetch_url(murl3);
+                    }
+                    Intent tquiz = new Intent(context, Quiz.class);
+                    context.startActivity(tquiz);
+                }
+                else {
+                    Toast.makeText(context, "Check your Internet Connection", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
         itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

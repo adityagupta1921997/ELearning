@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.apkglobal.elearning.Activity.Quiz">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp">
+
+
+        <TextView
+            android:id="@+id/question_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="QuestionName"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/question_name"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp">
+
+            <RadioButton
+                android:id="@+id/answerOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="answerOne" />
+
+            <RadioButton
+                android:id="@+id/answerTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="answerTwo" />
+
+            <RadioButton
+                android:id="@+id/answerThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="answerThree" />
+
+            <RadioButton
+                android:id="@+id/answerFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="answerFour" />
+        </RadioGroup>
+
+
+        <LinearLayout
+            android:padding="20dp"
+            android:weightSum="2"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/radioGroup"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <Button
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:id="@+id/button_previous_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_view_border"
+                android:padding="20dp"
+                android:text="Back"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:id="@+id/button_next_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_view_border"
+                android:padding="20dp"
+                android:text="Next"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--<com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        android:layout_centerInParent="true"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:visibility="invisible"
+        app:indicatorColor="#009688"
+        app:indicatorName="BallClipRotateMultipleIndicator"
+        />-->
+</RelativeLayout>
