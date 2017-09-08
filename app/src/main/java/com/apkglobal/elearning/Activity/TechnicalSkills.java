@@ -34,7 +34,7 @@ public class TechnicalSkills extends AppCompatActivity {
                 new LovelyStandardDialog(TechnicalSkills.this)
                         .setTopColorRes(R.color.background_color)
                         .setButtonsColorRes(R.color.background_color)
-                        .setIcon(R.drawable.start_icon)
+                        .setIcon(R.drawable.alert)
                         .setTitle("Get Set Go!!")
                         .setNegativeButton("OK", null)
                         .show();

@@ -74,7 +74,7 @@ public class Quiz extends AppCompatActivity {
                     new LovelyStandardDialog(Quiz.this)
                             .setTopColorRes(R.color.background_color)
                             .setButtonsColorRes(R.color.background_color)
-                            .setIcon(R.mipmap.ic_launcher)
+                            .setIcon(R.drawable.alert)
                             .setTitle("Please Select an Option")
                             .setNegativeButton("OK", null)
                             .show();
@@ -84,7 +84,7 @@ public class Quiz extends AppCompatActivity {
                     new LovelyStandardDialog(Quiz.this)
                             .setTopColorRes(R.color.background_color)
                             .setButtonsColorRes(R.color.background_color)
-                            .setIcon(R.mipmap.ic_launcher)
+                            .setIcon(R.drawable.alert)
                             .setTitle("Submission Quiz")
                             .setPositiveButton("Submit", new View.OnClickListener() {
                                 @Override
@@ -114,7 +114,6 @@ public class Quiz extends AppCompatActivity {
                 if (first_question_index == 0) {
                     pre_question.setVisibility(View.INVISIBLE);
                     score = 0;
-                    Toast.makeText(Quiz.this, "Initial score is: " + score, Toast.LENGTH_SHORT).show();
 
                 } else {
                     pre_question.setVisibility(View.VISIBLE);
@@ -123,10 +122,8 @@ public class Quiz extends AppCompatActivity {
                     fetchLists.execute(10, 0);
                     if (score > 0) {
                         score--;
-                        Toast.makeText(Quiz.this, "updated score is: " + score, Toast.LENGTH_SHORT).show();
                     } else {
                         score = 0;
-                        Toast.makeText(Quiz.this, "score still is: " + score, Toast.LENGTH_SHORT).show();
                     }
                 }
             }

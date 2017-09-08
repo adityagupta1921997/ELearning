@@ -7,12 +7,14 @@
     tools:context="com.apkglobal.elearning.Activity.Quiz">
 
     <RelativeLayout
+        android:background="@drawable/quiz_back"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="30dp">
+        >
 
 
         <TextView
+            android:layout_marginTop="30dp"
             android:id="@+id/question_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -30,12 +32,16 @@
             android:layout_marginTop="20dp">
 
             <RadioButton
+                android:textColor="#ffffff"
+                android:textStyle="bold"
                 android:id="@+id/answerOne"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="answerOne" />
 
             <RadioButton
+                android:textColor="#ffffff"
+                android:textStyle="bold"
                 android:id="@+id/answerTwo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -43,6 +49,8 @@
                 android:text="answerTwo" />
 
             <RadioButton
+                android:textColor="#ffffff"
+                android:textStyle="bold"
                 android:id="@+id/answerThree"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -50,6 +58,8 @@
                 android:text="answerThree" />
 
             <RadioButton
+                android:textColor="#ffffff"
+                android:textStyle="bold"
                 android:id="@+id/answerFour"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

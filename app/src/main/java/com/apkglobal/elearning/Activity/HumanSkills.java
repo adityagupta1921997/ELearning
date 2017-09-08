@@ -33,7 +33,7 @@ public class HumanSkills extends AppCompatActivity {
                 new LovelyStandardDialog(HumanSkills.this)
                         .setTopColorRes(R.color.background_color)
                         .setButtonsColorRes(R.color.background_color)
-                        .setIcon(R.drawable.start_icon)
+                        .setIcon(R.drawable.alert)
                         .setTitle("Get Set Go!!")
                         .setNegativeButton("OK", null)
                         .show();

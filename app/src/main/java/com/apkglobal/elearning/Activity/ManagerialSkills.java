@@ -33,7 +33,7 @@ public class ManagerialSkills extends AppCompatActivity {
                 new LovelyStandardDialog(ManagerialSkills.this)
                         .setTopColorRes(R.color.background_color)
                         .setButtonsColorRes(R.color.background_color)
-                        .setIcon(R.drawable.start_icon)
+                        .setIcon(R.drawable.alert)
                         .setTitle("Get Set Go!!")
                         .setNegativeButton("OK", null)
                         .show();
