@@ -4,19 +4,19 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.view.ViewPager;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.view.View;
 import android.support.design.widget.NavigationView;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
+import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
@@ -25,7 +25,6 @@ import com.apkglobal.elearning.Adapters.ImageSliderAdapter;
 import com.apkglobal.elearning.Helper.Helper;
 import com.apkglobal.elearning.Helper.Shared;
 import com.apkglobal.elearning.R;
-import com.apkglobal.elearning.SkillUtil.SkillAdapter;
 import com.apkglobal.elearning.SkillUtil.SkillAdapter;
 
 import java.util.Timer;
@@ -54,8 +53,6 @@ public class Navigation extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();*/
                 Toast.makeText(Navigation.this, "Give Your feedback after using this app!!", Toast.LENGTH_LONG).show();
                 Intent feedback=new Intent(Intent.ACTION_VIEW);
                 feedback.setData(Uri.parse("https://play.google.com"));
