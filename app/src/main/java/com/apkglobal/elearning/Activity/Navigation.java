@@ -180,7 +180,7 @@ public class Navigation extends AppCompatActivity
         else if (id == R.id.nav_share) {
             Intent share=new Intent(Intent.ACTION_SEND);
             share.putExtra(Intent.EXTRA_TEXT,
-                    "Hey check out my app at: https://play.google.com");
+                    "Hey check out my app at: https://play.google.com/uisde434fd");
             share.setType("text/plain");
             startActivity(Intent.createChooser(share,"Share App Via"));
 
